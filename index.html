@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <title>Florida Covid-19 Map</title>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="map-overlay" class="map-overlay"></div>
+    <div id="county-legend" class="legend">
+        <h4>Key</h4>
+        <div><span value="testing" style="background-color: #a29bfe"></span>Testing</div>
+        <div><span value="presumptive" style="background-color: palevioletred"></span>Presumptive Positive</div>
+        <div><span value="confirmed" style="background-color: green"></span>Confirmed</div>
+        <div><span value="deaths" style="background-color: cyan"></span>Deaths</div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="data.js"></script>
+<script src="scripts.js"></script>
+
+</html>
